@@ -101,7 +101,7 @@ public class Basics {
          * Current count: 1
          * Current count: 0
          */
-        for (int i = 0; i < 11; i++) {
+        for (int i = 0; i < 10; i++) {
             System.out.println("Current count: " + i);
         }
 
@@ -146,7 +146,7 @@ public class Basics {
          *                you may use them if you wish.
          */
         StringBuilder ret = new StringBuilder();
-
+        ret.append(to_split.charAt(0));
         for (int i = 0; i < to_split.length(); i++){
             if (to_split.charAt(i) == ' ') {
                 ret.append(to_split.charAt(i+1));
